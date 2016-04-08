@@ -1,0 +1,30 @@
+{
+  "name": "annotate-pdf",
+  "author": "Ashok Yadav<ashokyadav006@gmail.com>",
+  "version": "0.0.1",
+  "main": "dist/annotate-pdf.js",
+  "description": "annotate pdf on browser",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashokyadav006/annotate-pdf.git"
+  },
+  "keywords": [
+    "pdf",
+    "annotation"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/ashokyadav006/annotate-pdf/issues"
+  },
+  "homepage": "https://github.com/ashokyadav006/annotate-pdf#readme"
+}

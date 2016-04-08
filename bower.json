@@ -1,0 +1,25 @@
+{
+  "name": "annotate-pdf",
+  "version": "0.0.1",
+  "description": "annotate a pdf on browser",
+  "homepage": "https://github.com/ashokyadav006/annotate-pdf",
+  "main": "dist/annotate-pdf.js",
+  "authors": [
+    "Ashok Yadav <ashokyadav006@gmail.com>"
+  ],
+  "dependencies": {
+    "pdfjs-dist": "~1.4"
+  },
+  "keywords": [
+    "annotate",
+    "pdf"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
