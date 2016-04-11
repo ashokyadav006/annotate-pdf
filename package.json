@@ -14,14 +14,20 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-babel": "^6.1.2",
-    "gulp-concat": "^2.6.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-uglify": "^1.5.3"
+    "babel": "6.3.13",
+    "babel-core": "6.1.18",
+    "babel-eslint": "4.1.3",
+    "babel-loader": "6.1.0",
+    "babel-plugin-add-module-exports": "0.1.2",
+    "babel-preset-es2015": "6.3.13",
+    "escope": "^3.3.0",
+    "eslint": "1.7.2",
+    "eslint-loader": "1.1.0",
+    "webpack": "1.12.9"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "WEBPACK_ENV=build webpack",
+    "dev": "WEBPACK_ENV=dev webpack --progress --colors --watch"
   },
   "bugs": {
     "url": "https://github.com/ashokyadav006/annotate-pdf/issues"

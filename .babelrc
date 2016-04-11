@@ -1,1 +1,4 @@
-echo '{ "presets": ["es2015"] }' > .babelrc
+{
+  "presets": ["es2015"],
+  "plugins": ["babel-plugin-add-module-exports"]
+}
