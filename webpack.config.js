@@ -3,7 +3,7 @@ var path = require('path');
 var UglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
 var env = process.env.WEBPACK_ENV;
 
-var libraryName = 'annotatePDF';
+var libraryName = 'AnotatePDF';
 var outputFile, plugins = [];
 
 if(env === 'build') {
@@ -14,7 +14,7 @@ if(env === 'build') {
 }
 
 var config = {
-	entry: __dirname + '/src/annotePdf.js',
+	entry: __dirname + '/src/annotatePDF.js',
 	devtool: 'source-map',
 	output: {
 	    path: __dirname + '/dist',

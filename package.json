@@ -27,7 +27,8 @@
   },
   "scripts": {
     "build": "WEBPACK_ENV=build webpack",
-    "dev": "WEBPACK_ENV=dev webpack --progress --colors --watch"
+    "dev": "WEBPACK_ENV=dev webpack --progress --colors --watch",
+    "serve": "http-server"
   },
   "bugs": {
     "url": "https://github.com/ashokyadav006/annotate-pdf/issues"
