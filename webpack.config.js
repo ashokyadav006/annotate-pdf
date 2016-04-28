@@ -3,7 +3,7 @@ var path = require('path');
 var UglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
 var env = process.env.WEBPACK_ENV;
 
-var libraryName = 'AnotatePDF';
+var libraryName = 'annotatePDF';
 var outputFile, plugins = [];
 
 if(env === 'build') {
@@ -19,7 +19,7 @@ var config = {
 	output: {
 	    path: __dirname + '/dist',
 	    filename: outputFile,
-	    library: libraryName,
+	    library: 'AnnotatePDF',
 	    libraryTarget: 'umd',
 	    umdNamedDefine: true
 	},
