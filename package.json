@@ -23,13 +23,19 @@
     "escope": "^3.3.0",
     "eslint": "1.7.2",
     "eslint-loader": "1.1.0",
+    "ghooks": "^1.2.1",
     "http-server": "^0.9.0",
     "mocha": "2.4.5",
-    "webpack": "1.12.9",
-    "semantic-release": "^4.3.5"
+    "semantic-release": "^4.3.5",
+    "webpack": "1.12.9"
   },
-  "czConfig":{
-    "path": "node_modules/cz-conventional-changelog"
+  "config": {
+    "ghooks": {
+      "pre-commit": "npm run test"
+    },
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
   },
   "scripts": {
     "build": "WEBPACK_ENV=build webpack",
