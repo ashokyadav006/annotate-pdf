@@ -1,3 +1,3 @@
-export default function AnnotatePDF() {
-	console.log("hello world!!!");
+module.exports = {
+	annotationType: 1
 };
