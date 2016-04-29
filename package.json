@@ -1,12 +1,11 @@
 {
   "name": "annotate-pdf",
   "author": "Ashok Yadav<ashokyadav006@gmail.com>",
-  "version": "0.0.1",
   "main": "dist/annotatePDF.js",
   "description": "annotate pdf on browser",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ashokyadav006/annotate-pdf.git"
+    "url": "https://github.com/ashokyadav006/annotate-pdf.git"
   },
   "keywords": [
     "pdf",
@@ -26,12 +25,19 @@
     "eslint-loader": "1.1.0",
     "http-server": "^0.9.0",
     "mocha": "2.4.5",
-    "webpack": "1.12.9"
+    "webpack": "1.12.9",
+    "semantic-release": "^4.3.5"
+  },
+  "czConfig":{
+    "path": "node_modules/cz-conventional-changelog"
   },
   "scripts": {
     "build": "WEBPACK_ENV=build webpack",
     "dev": "WEBPACK_ENV=dev webpack --progress --colors --watch",
-    "serve": "http-server"
+    "serve": "http-server",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "test": "mocha test/test.js",
+    "commit": "git-cz"
   },
   "bugs": {
     "url": "https://github.com/ashokyadav006/annotate-pdf/issues"
