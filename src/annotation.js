@@ -1,4 +1,4 @@
-class Annotation {
+export class Annotation {
 	
 	constructor (page, data, type, color) {
 		this.page = page;

@@ -1,3 +1,0 @@
-const ANNOTATION_TYPE = {
-	HIGHLIGHT: 1
-}

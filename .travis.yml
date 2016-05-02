@@ -14,9 +14,7 @@ before_script:
 script:
   -npm run cover
   -npm run build
-  -npm run check-coverage
 after_success:
-  -npm run report-coverage
   - npm run semantic-release
 branches:
   only:

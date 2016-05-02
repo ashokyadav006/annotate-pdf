@@ -34,9 +34,6 @@
     "webpack": "1.12.9"
   },
   "config": {
-    "ghooks": {
-      "pre-commit": "npm run cover"
-    },
     "commitizen": {
       "path": "node_modules/cz-conventional-changelog"
     }
