@@ -45,6 +45,7 @@ See https://github.com/adobe-type-tools/cmap-resources
     <script src="debugger.js"></script>
     <script src="viewer.js"></script>
     <script type="text/javascript" src="../../dist/annotatePDF.js"></script>
+    <script type="text/javascript" src="./scripts/annote-handler.js"></script>
   </head>
 
   <body tabindex="1" class="loadingInProgress">
@@ -227,6 +228,10 @@ See https://github.com/adobe-type-tools/cmap-resources
                       <option title="" value="4" data-l10n-id="page_scale_percent" data-l10n-args='{ "scale": 400 }'>400%</option>
                     </select>
                   </span>
+                  <div class="verticalToolbarSeparator hiddenSmallView"></div>
+                  <button id="highlight" class="toolbarButton highlight" title="Highlight Text" tabindex="23" data-l10n-id="highlight">
+                    <span data-l10n-id="highlight_label">Highlight</span>
+                   </button>
                 </div>
               </div>
             </div>
@@ -418,7 +423,6 @@ See https://github.com/adobe-type-tools/cmap-resources
     </div>
   </div>
 </div>
-
   </body>
 </html>
 

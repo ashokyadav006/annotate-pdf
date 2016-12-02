@@ -1,11 +1,13 @@
-import Annotation from './annotation';
+import {Annotation} from './annotation';
+import {config} from './config';
 
 export class CanvasHolder {
 
 	constructor(canvas, page, width, height){
 		this.canvas = canvas;
 		this.page = page;
-		this.originalCanvasDimension = {}
+		this.originalCanvasDimension = {};
+		this.annotations = [];
 
 		var scale = PDFViewerApplication.pdfViewer.currentScale;
 
@@ -19,12 +21,30 @@ export class CanvasHolder {
 			this.originalCanvasDimension.height = height / scale;
 
 		}
+
+		this.addEventListeners();
+	}
+
+	addEventListeners() {
+		var pageContainer = document.getElementById("pageContainer"+this.page);
+		pageContainer.addEventListener('contextmenu', this.showContextMenu)
 	}
 
 	updateCanvasDimensions() {
 		var scale = PDFViewerApplication.pdfViewer.currentScale;
-
+		
 		this.canvas.width = this.originalCanvasDimension.width * scale;
 		this.canvas.height = this.originalCanvasDimension.height * scale;
+	}
+
+	showContextMenu(evt) {
+		let selectedText = window.getSelection().toString();
+		if(selectedText && config.annotationType === 'HIGHLIGHT') {
+			evt.preventDefault();
+		}
+	}
+
+	addAnnotation(type, config) {
+
 	}
 }

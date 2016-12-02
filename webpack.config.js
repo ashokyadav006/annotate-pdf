@@ -41,7 +41,10 @@ var config = {
 	    root: path.resolve('./src'),
 	    extensions: ['', '.js']
 	},
-	plugins: plugins
+	plugins: plugins,
+	devServer: {
+		inline: true
+	}
 };
 
 module.exports = config;

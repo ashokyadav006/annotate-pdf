@@ -1,10 +1,8 @@
 export class Annotation {
 	
-	constructor (page, data, type, color) {
+	constructor (page, data, color) {
 		this.page = page;
 		this.data = data;
-		this.type = type;
 		this.color = color;
 	}
-
 }
